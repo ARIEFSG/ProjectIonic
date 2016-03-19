@@ -41,6 +41,7 @@ angular.module('starter.controllers', [])
   };
 })
 
+
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
@@ -52,5 +53,15 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('resictrl', function($scope){
+
+  $scope.text={};
+  var nomor = $scope.text.nomor;
+  $scope.klikresi = function(nomor){
+    $scope.message = nomor +" DELIVERED";
+  }
+})
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
+  $scope.id = $stateParams.playlistId;
 });
