@@ -1,0 +1,49 @@
+<ion-view view-title="Cek Resi">
+
+
+  <div class="tabs-icon-left tabs-top tabs-background-dark tabs-color-stable">
+    <div class="tabs">
+      
+      <a class="tab-item" href="#/app/cektarif">
+        <i class="icon ion-search"></i>
+        Cek Tarif
+      </a>
+      
+      <a class="tab-item active" href="#/app/cekresi">
+        <i class="icon ion-document-text"></i>
+        Cek Resi
+      </a>
+      
+    </div>
+  </div>
+  
+
+
+  <ion-content>
+    <ion-list>
+      <ion-item>
+
+
+  <br>
+  <br>    
+  <div class="list">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Resi</span>
+        <input type="text" ng-model = "text.nomor" placeholder="Masukan Resi">
+      </label>
+
+
+  <br>
+    <button ng-click="klikresi(text.nomor)" class="button button-full button-dark">
+    Cek
+    </button>
+  </div>
+
+  <br>
+    {{message}}
+
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

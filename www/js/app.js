@@ -32,67 +32,62 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  
+//___________________________________________________________________
+
+
+
+  .state('app.cektarif', {
+    url: '/cektarif',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/cektarif.html',
+        controller: 'tarifctrl'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    .state('app.playlists', {
-      url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
-        }
-      }
-    })
-
-  .state('app.single', {
-    url: '/playlists/:playlistId',
+  .state('app.cekresi', {
+    url: '/cekresi',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  })
-  .state('app.contoh', {
-    url: '/contoh',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/contoh.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
-  })
-  .state('app.Resi', {
-    url: '/resi',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/resi.html',
+        templateUrl: 'templates/cekresi.html',
         controller: 'resictrl'
       }
     }
   })
 
+  .state('app.tentang', {
+    url: '/tentang',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tentang.html'
+      }
+    }
+  })
 
-  ;
+  .state('app.keluar', {
+      url: '/keluar',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/Keluar.html'
+        }
+      }
+    }
+);
+
+
+
+
+
 
 
 
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/cektarif');
 });
+
+
+
+

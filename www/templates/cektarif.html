@@ -1,0 +1,70 @@
+<ion-view view-title="Cek Tarif">	
+
+ <div class="tabs-icon-left tabs-top tabs-background-dark tabs-color-stable">
+    <div class="tabs">
+      
+      <a class="tab-item active" href="#/app/cektarif">
+        <i class="icon ion-search"></i>
+        Cek Tarif
+      </a>
+      
+      <a class="tab-item" href="#/app/cekresi">
+        <i class="icon ion-document-text"></i>
+        Cek Resi
+      </a>
+      
+    </div>
+  </div>
+  
+
+ <ion-content>
+    <ion-list>
+      <ion-item>
+
+      <br>
+      <br>
+    <div class="list">
+  		<label class="item item-input item-floating-label">
+    		<span class="input-label">Tempat Asal</span>
+    		<input type="text" placeholder="Tempat Asal">
+  		</label>
+  
+  		<label class="item item-input item-floating-label">
+    		<span class="input-label">Tempat Tujuan</span>
+    		<input type="text" placeholder="Tempat Tujuan">
+  		</label>
+  		
+  		<label class="item item-input item-floating-label">
+   			<span class="input-label">Berat Kiriman</span>
+    		<input type="text" placeholder="Berat Kiriman">
+  		</label>
+	</div>
+
+
+	<div class="list">
+  		<label class="item item-input item-select">
+    <div class="input-label">
+      Jasa Pengiriman
+    </div>
+    	<select>
+      		<option selected>Semua</option>
+      		<option>POS</option>
+      		<option>JNE</option>
+      		<option>TIKI</option>
+    	</select>
+  		</label>
+	</div>
+
+
+	{{tarif}}
+	
+
+	<button class="button button-full button-dark">
+  	Cek
+	</button>
+
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
